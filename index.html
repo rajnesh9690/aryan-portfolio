@@ -3,7 +3,60 @@
 <head>
 <title>Aryan Yadav | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color:white;
+  transition:0.3s ease;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h1{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.btn{
+  padding:12px 25px;
+  background:white;
+  color:#333;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+}
+
+.card{
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+    </style>
+    <button onclick="toggleMode()" style="position:fixed;top:20px;right:20px;" class="btn">
+Toggle Mode
+    </button>
 <style>
 body{
     margin:0;
