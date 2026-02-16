@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aryan Yadav | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+/* Navigation */
+nav{
+    background:rgba(0,0,0,0.3);
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+/* Sections */
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid white;
+}
+
+.card{
+    background:white;
+    color:#333;
+    padding:20px;
+    margin:20px auto;
+    border-radius:10px;
+    max-width:600px;
+}
+
+/* Form */
+input, textarea{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:#764ba2;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#5a3793;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <img src="https://via.placeholder.com/150">
+    <h1>Aryan Yadav</h1>
+    <p>Future Web Developer</p>
+</section>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Hello! Main Aryan Yadav hoon. Mujhe web development aur technology me interest hai.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>My Skills</h2>
+        <p>HTML | CSS | Learning JavaScript</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Me</h2>
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea rows="4" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="success"></p>
+    </div>
+</section>
+
+<footer>
+© 2026 Aryan Yadav | Portfolio
+</footer>
+
+<!-- WhatsApp Button (Number Change Karein) -->
+<a href="https://api.whatsapp.com/send?phone=919690980450&text=Hello Aryan, I visited your website!" class="whatsapp" target="_blank">WhatsApp</a>
+
+<script>
+function sendMessage(event){
+    event.preventDefault();
+    document.getElementById("success").innerHTML="✅ Message Sent Successfully!";
+}
+</script>
+
+</body>
+</html>
